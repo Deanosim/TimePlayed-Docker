@@ -1,0 +1,8 @@
+{
+    "beta": false,
+    "selfHost": true,
+    "botToken": "(bot-token)",
+    "mysqlhost": "localhost",
+    "mysqlpasswd": "(database-password)",
+    "mysqlusername": "root"
+}
