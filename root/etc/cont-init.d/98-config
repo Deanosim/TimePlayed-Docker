@@ -1,0 +1,9 @@
+#!/usr/bin/with-contenv bash
+
+echo "clone git repo" && \
+mkdir -p \
+       /app/TimePlayed \
+cd /app/TimePlayed/ \
+git clone https://github.com/ExplodingPineapple/TimePlayed.git
+ 
+ 

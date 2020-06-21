@@ -1,6 +1,8 @@
-FROM lsiobase/ubuntu
+FROM lsiobase/ubuntu as buildstage
 
 LABEL maintainer="Deanosim"
+
+ENV DEBIAN_FRONTEND="noninteractive"
 
 RUN \
  echo "**** install NodeJS git and npm ****" && \
@@ -9,11 +11,6 @@ RUN \
         nodejs \
         git \
         npm && \
- echo "clone git repo" && \
- mkdir -p \
-        /app/TimePlayed \
- cd /app/TimePlayed/ \
- git clone https://github.com/ExplodingPineapple/TimePlayed.git && \
  echo "install npm packages" \
  npm install discord.js mysql fast-levenshtein \
  echo "**** cleanup ****" && \
@@ -22,4 +19,4 @@ RUN \
 	/var/lib/apt/lists/* \
 	/var/tmp/*
 
-COPY keys.json /app/TimePlayed/
+COPY root/ /
