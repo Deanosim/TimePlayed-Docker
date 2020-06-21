@@ -13,7 +13,7 @@ RUN \
  mkdir -p \
         /app/TimePlayed \
  cd /app/TimePlayed/ \
- git clone git clone https://github.com/ExplodingPineapple/TimePlayed.git && \
+ git clone https://github.com/ExplodingPineapple/TimePlayed.git && \
  echo "install npm packages" \
  npm install discord.js mysql fast-levenshtein \
  echo "**** cleanup ****" && \
