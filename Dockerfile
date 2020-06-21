@@ -1,4 +1,4 @@
-FROM docker.pkg.github.com/linuxserver/docker-baseimage-ubuntu/baseimage-ubuntu:arm64v8-bionic
+FROM lsiobase/ubuntu
 
 LABEL maintainer="Deanosim"
 
