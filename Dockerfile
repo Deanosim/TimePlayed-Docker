@@ -20,5 +20,6 @@ RUN \
  rm -rf \
 	/tmp/* \
 	/var/lib/apt/lists/* \
-	/var/tmp/* && \
+	/var/tmp/*
+
 COPY keys.json /app/TimePlayed/
