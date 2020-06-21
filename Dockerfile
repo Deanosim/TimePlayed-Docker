@@ -13,7 +13,9 @@ RUN \
         npm && \
  echo "install npm packages" \
  npm install discord.js mysql fast-levenshtein \
+ 
  echo "**** cleanup ****" && \
+ 
  rm -rf \
 	/tmp/* \
 	/var/lib/apt/lists/* \
